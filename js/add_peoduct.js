@@ -103,15 +103,29 @@ let product_item= [
     }
     
 ];
-
-$(document).ready(()=>{
-    var html =""
-    for(let i = 0; i<product_item.length;i++){
-        html +=`<div class="product-items ${product_item[i].id}"><img class="product-img" src= ${product_item[i].img} alt="">
-        <p>${product_item[i].pd_name}</p>
-        <p class="product-price">${product_item[i].price} USD</p>
-        </div>`;
+// $(document).ready(()=>{
+//     var html =""
+//     for(let i = 0; i<product_item.length;i++){
+//         html +=`<div class="product-items ${product_item[i].id}"><img class="product-img" src= ${product_item[i].img} alt="">
+//         <p>${product_item[i].pd_name}</p>
+//         <p class="product-price">${product_item[i].price} USD</p>
+//         </div>`;
+//     }
+// $("#product_list").html(html);
+// });
+document.addEventListener("DOMContentLoaded", function () {
+    var html = "";
+    var productContainer = document.getElementById("product_list");
+  
+    for (let i = 0; i < product_item.length; i++) {
+      html += `<div class="product-items ${product_item[i].id}">
+                  <img class="product-img" src="${product_item[i].img}" alt="">
+                  <p>${product_item[i].pd_name}</p>
+                  <p class="product-price">${product_item[i].price} USD</p>
+               </div>`;
     }
-$("#product_list").html(html);
-});
-
+  
+    productContainer.innerHTML = html;
+  });
+// console.log(product_item[1].price)
+  
