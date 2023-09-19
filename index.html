@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/form_signin.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
@@ -21,14 +22,22 @@
             <button class="btn-login">Log in</button>
         </nav>
     </header>
-    <main>
-        <div class="containner">
-            <div class="content">
-                <div class="main_lef"><p>1</p></div>
-            <div class="main_right">2</div>
-            </div>
+    <div class="container">
+        <div class="sidebar">
+            <input type="text" class="sidebar-search" placeholder="Search.... ">
+            <!-- <a href="" class="sidebar-items">Menu1</a>
+            <a href="" class="sidebar-items">Menu2</a>
+            <a href="" class="sidebar-items">Menu3</a>
+            <a href="" class="sidebar-items">Menu4</a>
+            <a href="" class="sidebar-items">Menu1</a>
+            <a href="" class="sidebar-items">Menu2</a>
+            <a href="" class="sidebar-items">Menu3</a>
+            <a href="" class="sidebar-items">Menu4</a> -->
         </div>
-    </main>
+        <div class="product" id="product_list">
+    </div>
+
+    
     <div class="wrapper">
         <span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
         <div class="form-box login">
@@ -36,13 +45,13 @@
             <form action="#">
                 <div class="input-box">
                     <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
-                    <input type="email" required>
-                    <label for="">Email</label>
+                    <input type="email" placeholder="Email" required>
+                    <label for=""></label>
                 </div>
                 <div class="input-box">
                     <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
-                    <input type="password" required>
-                    <label for="">Password</label>
+                    <input type="password" placeholder="Password" required>
+                    <label for=""></label>
                 </div>
                 <div class="remember-forgot">
                     <label ><input type="checkbox">
@@ -61,18 +70,18 @@
             <form action="#">
                 <div class="input-box">
                     <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
-                    <input type="text" required>
-                    <label for="">Username</label>
+                    <input type="text" placeholder="Username" required>
+                    <label for=""></label>
                 </div>
                 <div class="input-box">
                     <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
-                    <input type="email" required>
-                    <label for="">Email</label>
+                    <input type="email" placeholder="Email" required>
+                    <label for=""></label>
                 </div>
                 <div class="input-box">
                     <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
-                    <input type="password" required>
-                    <label for="">Password</label>
+                    <input type="password" placeholder="Password" required>
+                    <label for=""></label>
                 </div>
                 <div class="remember-forgot">
                     <label ><input type="checkbox">
@@ -86,7 +95,7 @@
         </div>
     </div>
 
-
+    <script src="/js/add_peoduct.js"></script>
     <script src="/js/script.js"></script>
 </body>
 </html>
